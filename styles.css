@@ -118,7 +118,18 @@ input:focus::-webkit-input-placeholder {
     width: 50%;
 }
 
-input[type="text"]:focus {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    transition-property: background-color, color;
+    transition-duration: 0.6s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
     background-color: rgb(0, 31, 97);
     color: white;
 }
